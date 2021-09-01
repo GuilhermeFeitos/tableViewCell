@@ -69,4 +69,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print(programadores[indexPath.row])
+        
+    }
+    
 }
