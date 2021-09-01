@@ -71,6 +71,12 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let alert = UIAlertController(title: "Programador(a)", message: programadores[indexPath.row], preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+        
         print(programadores[indexPath.row])
         
     }
